@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu banco</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+  <div id="borda">
+    <p>Seu banco</p>
+    <div id="user">
+        <p id="saldo">50000</p>
+        <label>total:</label>
+        <input id="debito" type="number"><br>
+    </div>
+    <div id="buttons">
+        <button id="pay" onclick="pagar()">pagar</button>
+        <button id="rec" onclick="receber()">receber</button>
+        <button id="res" onclick="reset()">reset</button>
+    </div>
+  </div>
+    
+</body>
+</html>
