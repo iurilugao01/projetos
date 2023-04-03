@@ -9,19 +9,27 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-  <div id="borda">
-    <p>Seu banco</p>
-    <div id="user">
+    <div id="Background1"></div>
+    <div id="container1">
+      <div id="box1">
+        <div class="miniHeader">
+          <p>entradas</p>
+        </div>
+        <p id="entrada">0</p>
+      </div>
+      <div id="box2">
+        <p id="saida">0</p>
+      </div>
+      <div id="box3">
         <p id="saldo">50000</p>
-        <label>total:</label>
-        <input id="debito" type="number"><br>
+      </div>
     </div>
-    <div id="buttons">
+    <div id="form">
+        <input  id="debito" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
         <button id="pay" onclick="pagar()">pagar</button>
         <button id="rec" onclick="receber()">receber</button>
-        <button id="res" onclick="reset()">reset</button>
     </div>
-  </div>
+  
     
 </body>
 </html>

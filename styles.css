@@ -1,18 +1,85 @@
 
-#borda {
-    border-radius: 10px;
-    border: solid 5px rgba(0, 0, 0, 0.9);
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    margin-left: 50px;
-    padding-left: 5px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: cyan;
+body {
+    background-color: #202024;
+    color: #C4C4CC;
+    font-family: Roboto;
+    font-size: 25px ;
+    margin: 0;
+    padding: 0;
+    
 }
-button {
-    margin-top: 8px;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: cyan;
-    border-radius: 2px;
+#Background1 {
+    position: absolute;
+    height: 575px;
+    left: 0;
+    right: 0;
+    top: -12px;
+    background-color:#121214 ;
+}
+#container1 {
+    position: relative;
+    display: flex;
+    top:525px;
+    justify-content: center;
+}
+#box1 {
+    background-color: #323238;
+    width: 207px;
+    height: 80px;
+    border-radius: 6px;
+    text-align: left;
+}
+#box2 {
+    margin-right: 32px;
+    margin-left: 32px;
+    background-color: #323238;
+    width: 207px;
+    height: 80px;
+    border-radius: 6px;
+    text-align: center;
+}
+#box3 {
+    background-color: #323238;
+    width: 207px;
+    height: 80px;
+    border-radius: 6px;
+    text-align: center;
+}
+.miniHeader {
+    font-size: 12.5px;
+}
+#form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 650px;
+}
+#debito {
+    height: 37px;
+    width: 540px;
+    border-radius: 13px;
+    background-color: #323238;
+    color: #E1E1E6;
+    font-family: 'roboto';
+    font-size: 25px;
+}
+#pay {
+    height: 47px;
+    width: 60px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'roboto';
+    color: #FFFFFF;
+    background-color: #F75A68;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#rec {
+    height: 47px;
+    width: 60px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'roboto';
+    color: #FFFFFF;
+    background-color: #00875F;
 }
