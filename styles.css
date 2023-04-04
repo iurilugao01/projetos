@@ -10,7 +10,7 @@ body {
 }
 #Background1 {
     position: absolute;
-    height: 575px;
+    height: 475px;
     left: 0;
     right: 0;
     top: -12px;
@@ -19,7 +19,7 @@ body {
 #container1 {
     position: relative;
     display: flex;
-    top:525px;
+    top: 425px;
     justify-content: center;
 }
 #box1 {
@@ -27,7 +27,7 @@ body {
     width: 207px;
     height: 80px;
     border-radius: 6px;
-    text-align: left;
+    text-align: center;
 }
 #box2 {
     margin-right: 32px;
@@ -48,11 +48,19 @@ body {
 .miniHeader {
     font-size: 12.5px;
 }
+#formHeader {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 550px;
+    right: 230px;
+    font-family: 'Roboto';
+}
 #form {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 650px;
+    top: 550px;
 }
 #debito {
     height: 37px;
@@ -62,6 +70,7 @@ body {
     color: #E1E1E6;
     font-family: 'roboto';
     font-size: 25px;
+    outline: none;
 }
 #pay {
     height: 47px;

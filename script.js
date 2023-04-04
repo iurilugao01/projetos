@@ -1,9 +1,5 @@
 let inputDebito = document.getElementById('debito')
 let saldo = document.getElementById('saldo')
-
-  if(parseFloat(inputDebito.value) = NaN ) {
-    inputDebito.value = "0"
-  }
   
 let entrada = document.getElementById('entrada')
 let saida = document.getElementById('saida')
@@ -19,18 +15,23 @@ let saida = document.getElementById('saida')
   }
 
 function pagar() {
+
     let saldoNumber = parseFloat(saldo.innerText)
     let debitoNumber = parseFloat(inputDebito.value)
 
-    saida.innerText = String(inputDebito.value)
-    localStorage.setItem("saida", saida.innerText)
+    let saidaNumber = parseFloat(saida.innerText)
+    
+    if(inputDebito.value !== "" && !isNaN(debitoNumber)) {
+      saida.innerText = String(saidaNumber + debitoNumber);
+    }
 
     if(inputDebito.value !== "" && !isNaN(debitoNumber)) {
         saldo.innerText = String(saldoNumber - debitoNumber);
       }
 
-     
+    localStorage.setItem("saida", saida.innerText) 
     localStorage.setItem("saldo", saldo.innerText)
+    
     inputDebito.value = null
     
     
@@ -39,14 +40,19 @@ function receber() {
     let saldoNumber = parseFloat(saldo.innerText)
     let debitoNumber = parseFloat(inputDebito.value)
 
-    entrada.innerText = String(inputDebito.value)
-    localStorage.setItem("entrada", entrada.innerText)
+    let entradaNumber = parseFloat(entrada.innerText)
+    
+    if(inputDebito.value !== "" && !isNaN(debitoNumber)) {
+      entrada.innerText = String(entradaNumber + debitoNumber);
+    }
 
     if(inputDebito.value !== "" && !isNaN(debitoNumber)) {
         saldo.innerText = String(saldoNumber + debitoNumber);
       }
 
+    localStorage.setItem("entrada", entrada.innerText)  
     localStorage.setItem("saldo", saldo.innerText)
+    
     inputDebito.value = null
 }
 
